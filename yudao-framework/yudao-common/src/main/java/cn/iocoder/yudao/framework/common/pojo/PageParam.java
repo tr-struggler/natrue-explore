@@ -1,6 +1,7 @@
 package cn.iocoder.yudao.framework.common.pojo;
 
 import io.swagger.v3.oas.annotations.media.Schema;
+import lombok.AllArgsConstructor;
 import lombok.Data;
 
 import javax.validation.constraints.Min;
@@ -10,6 +11,7 @@ import java.io.Serializable;
 
 @Schema(description="分页参数")
 @Data
+@AllArgsConstructor
 public class PageParam implements Serializable {
 
     private static final Integer PAGE_NO = 1;

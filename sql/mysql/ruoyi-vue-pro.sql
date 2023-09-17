@@ -14,8 +14,7 @@
  Date: 24/07/2023 08:51:31
 */
 
-SET NAMES utf8mb4;
-SET FOREIGN_KEY_CHECKS = 0;
+
 
 -- ----------------------------
 -- Table structure for QRTZ_BLOB_TRIGGERS

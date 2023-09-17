@@ -271,6 +271,20 @@ public class Controller {
         return CommonResult.success();
     }
 
+    /**
+     * editteaminfo
+     *
+     * @param params
+     * @return {@link CommonResult}<>
+     */
+
+    @RequestMapping("getteaminfo")
+    public CommonResult<TeamDO> getteaminfo(@RequestBody JSONObject params) {
+
+
+        return CommonResult.success(teamMapper.selectById(params.getString("tid")));
+    }
+
     protected void ReviewTeamLeader(JSONObject params) {
         ProjectTeamMemberDO teamMemberDO = new ProjectTeamMemberDO();
         teamMemberDO.setTID(params.getString("tid"));
